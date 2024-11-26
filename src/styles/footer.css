@@ -1,0 +1,271 @@
+@font-face {
+  font-family: 'SimplonNorm-Regular-WebS';
+  src: url('../assets/fonts/SimplonNorm-Regular-WebS.eot'); 
+  src: url('../assets/fonts/SimplonNorm-Regular-WebS.eot?#iefix') format('embedded-opentype'), 
+       url('../assets/fonts/SimplonNorm-Regular-WebS.woff') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1200px;
+  border-bottom: 1px solid #FFFFFF;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.left {
+  flex: 1;
+  max-width: 50%;
+}
+
+.left h1 {
+  font-size: 20px;
+  margin-bottom: 23px;
+}
+
+.left p {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.subscribeWrapper {
+  background-color: #f0f0f0; 
+  padding: 12px; 
+  border-radius: 5px; 
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-top: 20px; 
+  border: 1px solid #ccc;
+}
+
+.emailInput {
+  padding: 8px 40px;
+  margin-right: 10px;
+  font-size: 1rem;
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+.searchButton {
+  padding: 10px 30px;
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 3px;  
+  border: 1px solid #FFFFFF; 
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  max-width: 40%;
+}
+
+.right h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: -3px;
+}
+
+.right .contactText {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.currencyText {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.currencyImage {
+  width: 40px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.currencyInfoText {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.leftBottom,
+.centerBottom,
+.rightBottom {
+  width: 30%;
+}
+
+.leftBottom h1,
+.rightBottom p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+.centerBottom h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+
+.leftBottom p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  margin-left: 50px;
+}
+
+.centerBottom p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.rightBottom p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 0px;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.socialLinks img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.paymentBoxContainer {
+  margin-top: 20px;
+}
+
+.paymentText {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.paymentImagesContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.paymentBox img {
+  width: 50px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  background-color: #000000;
+  width: 100%;
+  max-width: 1200px;
+  overflow-y: hidden;
+}
+
+.copyright p {
+  margin: 0;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footerTop {
+    display: none;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .footerBottom .leftBottom,
+  .footerBottom .centerBottom,
+  .footerBottom .rightBottom {
+    width: 100%;
+    text-align: left;
+    padding: 15px 0;
+  }
+
+  .footerBottom .leftBottom,
+  .footerBottom .centerBottom,
+  .footerBottom .rightBottom {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .footerBottom .leftBottom p,
+  .footerBottom .centerBottom p {
+    display: none;
+  }
+
+  .footerBottom .rightBottom .socialLinks {
+    display: none;
+  }
+
+  .footerBottom .rightBottom p {
+    border-bottom: 1px solid #ccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .footerBottom .leftBottom h1 {
+    margin-left: 5px;
+  }
+
+  .paymentBoxContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .paymentBox {
+    width: 120px;
+  }
+
+  .paymentImagesContainer {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .paymentBox img {
+    max-width: 50px;
+  }
+}
